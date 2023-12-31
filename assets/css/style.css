@@ -25,17 +25,38 @@ h1 {
     margin: 2.6rem 3.8rem 1.8rem;
 }
 /* Main */
+/* Cards */
+.cards {
+    margin: auto;
+}
+
+.card {
+    margin-bottom: 3.1rem;
+}
+
+.card-link {
+    text-decoration: none;
+}
+
 /* Payment */
 .payment {
     display: none;
     background-color: #17A2B8;
     padding: 3.6rem 7.5rem;
+    color: #FFFFFF;
 }
 
-.payment h2 {
-    font-weight: 700;
-    font-size: 2.5rem;
-    color: #FFFFFF;
+.credit-cards {
+    height: 3.3rem;
+    display: flex;
+    justify-content: end;
+    flex-wrap: wrap;
+}
+
+.credit-cards i {
+    width: 5rem;
+    height: 3.3rem;
+    font-size: 3.3rem;
 }
 
 /* Footer */
@@ -48,7 +69,26 @@ h1 {
 .footer img {
     width: 2.25rem;
     height: 4.2rem;
+}
 
+@media screen and (min-width: 760px){
+    .payment {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 3rem 7.5rem;
+        padding-bottom: 3rem;
+    } 
+
+    .payment h2 {
+        font-weight: 700;
+        font-size: 2rem;
+    }
+
+    .credit-cards {
+        width: 18rem;
+        align-self: auto;
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -61,6 +101,16 @@ h1 {
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+
+    .payment h2 {
+        font-size: 2.5rem;
+    }
+
+    .credit-cards {
+        flex-wrap: nowrap;
+        width: 38.4rem;
+        align-self: center;
     }
     
     .footer {
